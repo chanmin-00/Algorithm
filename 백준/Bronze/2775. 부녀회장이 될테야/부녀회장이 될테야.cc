@@ -9,7 +9,6 @@ int dp[15][15] = {
     0,
 };
 int people_count(int k, int n);
-void init_dp(int k, int n);
 
 int main(void)
 {
@@ -33,7 +32,6 @@ int main(void)
 
         result[k][n] = people_count(k, n);
         cout << result[k][n] << '\n';
-        // init_dp(k, n);
     }
 }
 
@@ -56,13 +54,4 @@ int people_count(int k, int n)
     return dp[k][n];
 }
 
-void init_dp(int k, int n)
-{
-    for (int i = 1; i <= k; k++)
-    {
-        for (int j = 1; j <= n; j++)
-        {
-            dp[i][j] = 0;
-        }
-    }
-}
+
