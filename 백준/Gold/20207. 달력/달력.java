@@ -96,9 +96,10 @@ public class Main {
 				}
 			}
 
-			tmpSum = height * (endWidth - startWidth + 1); // 새로운 코팅지가 필요한 경우에 대한 조건문을 만나고 끝난 경우를 계산하기 위함
+			tmpSum = height * (endWidth - startWidth + 1); // 새로운 코팅지가 필요한 경우에 대한 조건문을 만나지않고 끝난 경우를 계산하기 위함
 		}
 
 		System.out.println(sum + tmpSum);
 	}
 }
+
