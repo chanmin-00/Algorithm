@@ -1,0 +1,4 @@
+-- 코드를 작성해주세요
+-- MONTH(타입이 DATA인 컬럼명) --> 월 추출
+-- COUNT(*) --> NULL인거는 출력하지 않음
+SELECT COUNT(*) AS FISH_COUNT, MONTH(TIME) AS MONTH FROM FISH_INFO GROUP BY MONTH(TIME) ORDER BY MONTH;
