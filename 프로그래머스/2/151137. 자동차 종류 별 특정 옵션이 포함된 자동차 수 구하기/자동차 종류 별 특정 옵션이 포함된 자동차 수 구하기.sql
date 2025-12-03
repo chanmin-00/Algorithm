@@ -1,0 +1,9 @@
+-- 코드를 입력하세요
+-- 특정 문자열 포함 여부를 알기 위해서는 LIKE 문법을 사용할 수 있다.
+
+SELECT CAR_TYPE, COUNT(*) AS CARS
+FROM CAR_RENTAL_COMPANY_CAR
+WHERE OPTIONS LIKE '%가죽시트%' OR OPTIONS LIKE '%열선시트%' 
+OR OPTIONS LIKE '%통풍시트%'
+GROUP BY CAR_TYPE
+ORDER BY CAR_TYPE;
